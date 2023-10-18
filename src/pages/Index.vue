@@ -45,6 +45,15 @@ export default {
 <hr>
 
   <div class="container">
+    <!--Per visualizzare gli altri progetti-->
+    <div class="m-auto mb-5 next-prev-page text-center">
+      <a v-for="linkPage in pagination.links"
+        class="btn btn-link"
+        :class="{'active':linkPage.label == pagination.current_page}"
+        @click="fetchData(linkPage.url)"
+        v-html="linkPage.label">
+      </a>
+    </div>
     <div class="mt-5">
       <div class="card mb-3 card-index transp-bg" v-for="project in projects">
         <div class="row g-0 transp-bg rounded">
@@ -64,7 +73,7 @@ export default {
                 </small>
               </p>
               <div class="d-flex align-items-center">
-                <span class="badge primaryc-text" v-for="techs in project.technologies">{{techs.name}}</span>
+                <span class="badge badge secondaryc-text primaryc-bg mx-1" v-for="techs in project.technologies">{{techs.name}}</span>
               </div>
               <div class="mt-5">
                 <router-link :to="{name: 'project.show', params: {slug:project.slug}}"><button class="btn primaryc-btn text-white me-2">Show more</button></router-link>
