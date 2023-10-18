@@ -41,11 +41,12 @@ export default {
       //SE TUTTO è andato bene, nella tabella creata nel db dovremmo avere i dati
     },
     onAttachmentChange(event){
+      
       const files = event.target.files;
       if (files.length > 0) {
         this.formData.attachment = files[0];
       } else {
-        this.formData.attachment = null;
+        this.formData.attachment = null; //Chiedi florian perchè non andasse
       }
     },
   },
