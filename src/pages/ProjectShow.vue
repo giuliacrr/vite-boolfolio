@@ -16,7 +16,7 @@ methods: {
     .catch((e) => {
           console.error(e);
 
-          this.$router.push({ name: "not-found" });
+          this.$router.push({ name: "not.found" });
         })
   },
   getImageUrl(project) {
