@@ -46,7 +46,7 @@ const routes = [{
 //ROTTA 404 NOT FOUND
 { // QUESTA ROTTA VA SCRITTA SEMPRE ALLA FINE
   path: "/:pathMatch(.*)*",
-  name: "not.found",
+  name: "not-found",
   component: NotFoundPage,
 },
 ];

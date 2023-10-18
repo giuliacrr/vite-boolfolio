@@ -15,8 +15,7 @@ methods: {
     .then((response)=> {this.project = response.data})
     .catch((e) => {
           console.error(e);
-
-          this.$router.push({ name: "not.found" });
+          this.$router.push({ name: "not-found" });
         })
   },
   getImageUrl(project) {

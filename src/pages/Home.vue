@@ -5,7 +5,9 @@ export default {
 
 <template>
   <div class="container">
-    <h1>Benvenuti nella home!</h1>
+    <div class="text-center secondaryc-text">
+      <h1>Welcome everyone!</h1>
+    </div>
   </div>
 </template>
 

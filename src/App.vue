@@ -42,9 +42,6 @@ export default {
       </router-view>
     </main>
 
-  <footer class="secondaryc-btn py-5">
-
-  </footer>
 </template>
 
 <style lang="scss"></style>
